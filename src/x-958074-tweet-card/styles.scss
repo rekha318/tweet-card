@@ -1,0 +1,11 @@
+@import '@servicenow/sass-kit/host';
+.app {
+    width: 100%;
+    padding: 16px;
+    display: inline-grid;
+    justify-content: center;
+}
+.text-input {
+    display: flex;
+    justify-content: center;
+}
