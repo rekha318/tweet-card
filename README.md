@@ -11,7 +11,11 @@ server {
     server_name  localhost;
         client_max_body_size 100M;
        
-       # add this under server of your local nginx config and restart the nginx
+        location / {
+            proxy_pass http://localhost:8080/;
+        }
+
+       #add this under server of your local nginx config and restart the nginx
         location /tweets/ {
               proxy_pass https://api.twitter.com/2/;
         }
@@ -19,3 +23,16 @@ server {
 
 ```
 
+
+## Install the required packages  and start the app using below commands
+
+```bash
+
+npm i
+
+now-cli develop –open
+
+```
+
+
+## Default URL for app : http://localhost/ 
