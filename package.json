@@ -29,5 +29,8 @@
 		"@servicenow/cli-archetype-dev": "20.0.0",
 		"@servicenow/cli-component-archetype-dev": "20.0.0",
 		"react-error-overlay": "6.0.9"
+	},
+	"scripts": {
+		"start": "now-cli develop –open"
 	}
 }

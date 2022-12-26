@@ -12,7 +12,7 @@ server {
         client_max_body_size 100M;
        
         location / {
-            proxy_pass http://localhost:8080/;
+            proxy_pass http://localhost:8081/;
         }
 
        #add this under server of your local nginx config and restart the nginx
@@ -30,7 +30,7 @@ server {
 
 npm i
 
-now-cli develop –open
+npm start
 
 ```
 
